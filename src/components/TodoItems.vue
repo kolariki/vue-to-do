@@ -25,7 +25,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 .todo{
         border-bottom: solid 1px rgb(133, 8, 8);
         padding: 10px;

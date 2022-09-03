@@ -89,6 +89,7 @@ export default {
 h2 {
   text-align: center;
   padding: 0 20px;
+  color: rgb(178, 175, 180);
 }
 
 body {
@@ -100,7 +101,7 @@ body {
 }
 
 #main-container {
-  border: solid 1px #ccc;
+  border: solid 10px rgba(36, 28, 28, 0.541);
   width: 700px;
   margin: 100px auto;
   background-image: url('./assets/espacio3.jpg');
@@ -108,7 +109,7 @@ body {
 
 #header {
   background-image: url('./assets/espacio.jpg');
-  padding: 10px;
+  padding: 20px;
 }
 
 </style>

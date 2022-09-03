@@ -18,16 +18,18 @@ export default {
 
 <style>
     #search-container{
-        width: 600px;
+        width: 660px;
         margin: 0 auto;
-        background-color: black;
+        background-color: rgb(37, 33, 33);
     }
 
     input{
         padding: 10px;
         width: 100%;
         outline: none;
-        background-color: rgb(31, 30, 30);
-        color: blueviolet;
+        background-color: rgb(41, 39, 39);
+        color: rgb(189, 21, 15);
+        font-size: 20px;
+        border: solid 10px rgb(5, 71, 156);
     }
 </style>

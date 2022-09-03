@@ -39,9 +39,9 @@ this.$emit('add-todo', newTodo)
         align-items: center;
         padding: 10px;
         outline: none;
-        border: solid 1px #ccc;
+        border: solid 10px rgb(218, 19, 19);
         width: 100%;
-        background-color: rgb(126, 29, 218);
-    color: black;
+        color: rgb(177, 13, 13);
+        font-size: 20px;
     }
 </style>
