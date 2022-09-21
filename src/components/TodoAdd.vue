@@ -6,6 +6,7 @@
     </div>
 </template>
 <script>
+    //importamos uuid 
 import {uuid} from 'vue-uuid'
 export default {
     name: 'TodoAdd',
@@ -18,13 +19,15 @@ return{
         addTodo(e){
 e.preventDefault();
 
+
+//usamos uuid para obtener un id aleatorio
 const newTodo = {
     id: uuid.v4(),
     title: this.title,
     completed: false
 };
 
-this.title = '';
+//regresamos a titile con string vacio. Llamamos emit para cargar una nueva tarea
 this.$emit('add-todo', newTodo)
         },
     }
@@ -33,15 +36,15 @@ this.$emit('add-todo', newTodo)
 <style scoped>
     #add-container{
         padding: 10px;
-        background-color: rgb(204, 201, 50);
+        background-color: rgb(255, 247, 247);
     }
     input{
         align-items: center;
         padding: 10px;
         outline: none;
-        border: solid 10px rgb(218, 19, 19);
+        border: solid 10px rgb(212, 182, 10);
         width: 100%;
-        color: rgb(177, 13, 13);
+        color: rgb(250, 11, 11);
         font-size: 20px;
     }
 </style>

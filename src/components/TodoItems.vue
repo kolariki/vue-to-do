@@ -29,7 +29,7 @@ export default {
 .todo{
         border-bottom: solid 1px rgb(133, 8, 8);
         padding: 10px;
-        background-color: rgb(209, 206, 17);
+       background-color: aliceblue;
     }
 .todo:not( .completed) :hover{
     background-color: rgb(102, 98, 98);
@@ -44,7 +44,7 @@ export default {
 .todo-body, .todo-actions{
     display:inline-block;
     vertical-align: top;
-    background-color: rgb(204, 201, 50);
+    background-color: aliceblue;
 }
 .todo-body{
     width: 85%;
@@ -58,7 +58,7 @@ button{
     border: none;
     border-radius: 10px;
     padding: 10px;
-    background-color: rgb(18, 82, 221);
+    background-color: rgb(241, 19, 11);
     color: black;
 }
 button:hover{

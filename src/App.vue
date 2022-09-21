@@ -1,6 +1,7 @@
 <template>
   <div>
   <div id="header">
+    <h5> Search </h5>
     <Search v-on:query-change="querySearch"/>
   </div>
 
@@ -11,6 +12,8 @@
     </div>
   </div>
 </template>
+
+
 
 <script id="script">
 //import HelloWorld from './components/HelloWorld.vue'
@@ -30,10 +33,16 @@ export default {
       this.todos = this.todos.filter(todo => todo.id != id);
       this.copyTodos = [... this.todos];
     },
+
+    //añadimos el nuevo todo con push y se replica con this.copyTodos
     addTodo(todo){
             this.todos.push(todo);
             this.copyTodos = [... this.todos];
         },
+
+        //definimos la funcion del query
+        //validamos el query con el IF. Si es "" muestra todos los TO DO.
+        //sino el const temp filtra y regresa todo lo que el query indique.
         querySearch(query){
           if(query.trim() === ''){
             this.copyTodos = [... this.todos];
@@ -72,6 +81,8 @@ export default {
       copyTodos: []
     }
   },
+
+  //se ejecuta cuando carga la app y tiene todos los datos de copyTodos
   created() {
     this.copyTodos = [... this.todos];
   }
@@ -89,7 +100,7 @@ export default {
 h2 {
   text-align: center;
   padding: 0 20px;
-  color: rgb(178, 175, 180);
+  color: rgb(247, 14, 14);
 }
 
 body {
@@ -97,19 +108,24 @@ body {
   font-size: 1.2em;
   padding: 0;
   margin: 0;
-  background-image: url('./assets/espacio.jpg');
+  background-image: url('./assets/gif5.gif');
 }
 
 #main-container {
   border: solid 10px rgba(36, 28, 28, 0.541);
-  width: 700px;
-  margin: 100px auto;
-  background-image: url('./assets/espacio3.jpg');
+  width: 900px;
+  margin: 80px auto;
+  background-image: url('./assets/gif6.gif');
 }
 
 #header {
-  background-image: url('./assets/espacio.jpg');
-  padding: 20px;
+  background-image: url('./assets/gif6.gif');
+  padding: 10px;
+}
+h5{
+  text-align: center;
+  font-size: 25px;
+  color: rgb(11, 153, 172);
 }
 
 </style>
